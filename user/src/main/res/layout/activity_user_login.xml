@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<layout>-->
+
+<!--<data>-->
+<!--<variable-->
+<!--name="mesgParams"-->
+<!--type="com.powyin.yunbao.login.model.YbMessageParams"></variable>-->
+<!--</data>-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSeaBlue"
+    tools:context="com.idogs.laosiji.user.function.login.UserLoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="105dp"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="175dp"
+        android:background="@drawable/login_card"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="260dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_login_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/login_user" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_toLeftOf="@+id/bt_phone"
+                android:layout_toRightOf="@+id/iv_login_user"
+                android:background="@null"
+                android:inputType="phone"
+                android:gravity="center_vertical"
+                android:hint="@string/user_phone"
+                android:focusableInTouchMode="true"
+                android:text=""/>
+
+            <Button
+                android:id="@+id/bt_phone"
+                android:layout_width="72dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/login_next"
+                android:gravity="center"
+                android:textColor="@color/font_white"
+                android:text="@string/user_send_mesg"
+                android:maxLines="1"
+                android:clickable="true"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="260dp"
+            android:layout_height="1px"
+            android:layout_marginLeft="40dp"
+            android:background="@color/colorShallowGray" />
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="40dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/login_user" />
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:background="@null"
+                android:inputType="text"
+                android:gravity="center_vertical"
+                android:hint="验证码"
+                android:focusableInTouchMode="true"
+                android:text=""/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="260dp"
+            android:layout_height="1px"
+            android:layout_marginLeft="40dp"
+            android:background="@color/colorShallowGray" />
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="42dp"
+            android:background="@drawable/login_next"
+            android:gravity="center"
+            android:text="登录/注册"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="- OR -"
+            android:textColor="@color/colorDeepWhite"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/wechat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="微信授权登录" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/login_agree" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我同意遵守《用户协议》"
+                android:textColor="@color/colorWarmBlue"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+    <!--</layout>-->

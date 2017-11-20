@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:fitsSystemWindows">false</item>
+    </style>
+
+    <declare-styleable name="SettingItemView">
+        <attr name="setFirstImage" format="reference" />
+        <attr name="setFirstText" format="string" />
+        <attr name="setRightText" format="string" />
+        <attr name="setRightImageVisible" format="boolean" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--topBar-->
+    <declare-styleable name="BaseTopBar">
+        <attr name="showBackIcon" format="boolean" />
+        <attr name="title" format="string"/>
+        <attr name="pageCount" format="integer" />
+        <attr name="menuLeftText" format="string"/>
+        <attr name="menuLeftImage" format="reference"/>
+        <attr name="menuRightText" format="string"/>
+        <attr name="menuRightImage" format="reference"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="BaseTopBar_LayoutParams">
+        <attr name="layout_replace" format="integer" />
+    </declare-styleable>
+</resources>
